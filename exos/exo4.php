@@ -23,7 +23,9 @@ require_once '../inc/functions.php';
  *   fonction pour avoir d'autres numéros…
  */
 
+// Correction : bien, il ne manque que le bonus
 function numerosLoto() {
+    // Correction : tout ceci manque de commentaire :/
     $tableau = array((mt_rand ( 1 , 49 )), (mt_rand ( 1 , 49 )), (mt_rand ( 1 , 49 )), (mt_rand ( 1 , 49 )), (mt_rand ( 1 , 49 )), (mt_rand ( 1 , 10 )) );
     return $tableau;
 }

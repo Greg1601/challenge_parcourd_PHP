@@ -24,6 +24,7 @@ require_once '../inc/functions.php';
  * Allez, bon courage… (mouhahaha)
  */
 
+// Correction : bien
 function hello() {
 
     //récupération de la date de naissance dans une variable
@@ -46,6 +47,8 @@ function hello() {
     // echo $todayArray[2];
 
     //comparaison des dates pour en déduire l'age
+    // Correction : on ne déclare pas de fonction dans une fonction. Il fallait la déclarer en dehors
+    // Correction : tu as récupéré cette fonction ou tu l'as écrite ?
     function getAge($todayArray , $dobArray) {
         $age = $todayArray[2] - $dobArray[2];
             if (($todayArray[1] < $dobArray[1]) || ($todayArray[1] < $dobArray[1]) && ($todayArray[0] < $dobArray[0]))

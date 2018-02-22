@@ -28,7 +28,9 @@ require_once '../inc/functions.php';
  *   'Bonjour Zelda, comment tu vas ?'
  */
 
+// Correction : bien
 function hello() {
+    // Correction : mais que se passe-t-il s'il n'y a pas "?name=Zelda" dans l'URL ?
     return 'Bonjour ' . htmlspecialchars($_GET["name"]).', comment tu vas ?';
 }
 

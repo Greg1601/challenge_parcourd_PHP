@@ -30,11 +30,10 @@ require_once '../inc/functions.php';
  *      calculPlage(1, 2, 3) doit renvoyer 9
  */
 
-
-
-
+// Correction : bien
+// Correction : attention, ce serait mieux si le nom des paramètres étaient + significatifs
 function calculPlage($price1, $price2, $price3) {
-
+    // Correction : attention à l'indentation !
 return $price1 + $price2 + $price3*2;
 
 }

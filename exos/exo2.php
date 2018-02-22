@@ -30,12 +30,16 @@ require_once '../inc/functions.php';
  * http://php.net/manual/fr/function.is-array.php
  */
 
+// Correction : il ne fallait pas ajouter un 4e paramètre
+// Correction : il fallait rendre les 2e et 3e paramètres optionnels (en leur donnant une valeur par défaut)
 function calculPlage($price, $price1, $price2, $price3) {
-    $price1;
+    // Correction : tout ceci manque de commentaire :/
+    $price1; // Correction : pourquoi ces 3 lignes ?
     $price2;
     $price3;
     $price = array("price1", "price2", "price3");
 
+    // Correction : ici, $price est toujours un array car tu modifie sa valeur à l'instruction précédente
     if (is_array($price)) {
         $total = $price[0] + $price[1] +$price[2]*2;
         return $total;
